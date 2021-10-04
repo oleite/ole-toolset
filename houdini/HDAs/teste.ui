@@ -1,0 +1,14 @@
+filename.val := "defgeo.bgeo";
+filename.gad = FILENAME_FIELD(geo) "Geometry File":1.5 VALUE(filename.val);
+dialog.win = DIALOG "Save As..."
+{
+    HSTRETCH LOOK(plain) LAYOUT(vertical) JUSTIFY(center, center)
+        VALUE(open.val)
+    filename.gad HSTRETCH;
+   
+    ROW 
+    {
+        ACTION_BUTTON "Save" VALUE(save.val) SENDS(1);
+        ACTION_BUTTON "Cancel" VALUE(save.val) SENDS(0);
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menuDocument>
+    <menu>
+        <separatorItem id="opmenu.ole_sep">
+                <insertAfter>opmenu.outputs_menu</insertAfter>
+            </separatorItem>
+        <scriptItem id="opmenu.ole_changenodecolor">
+            <insertAfter>opmenu.ole_sep</insertAfter>
+            <label>[OL] Mudar Cor do Node</label>
+            <scriptPath>$OLE_TOOL/houdini/scripts/change_node_color.py</scriptPath>
+        </scriptItem>
+    </menu>
+</menuDocument>
